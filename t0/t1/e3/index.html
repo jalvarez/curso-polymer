@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <script>
+	  		var persona = {
+				nombre : "Juan",
+				apellidos : "Perez Perez",
+				edad : "25",
+				altura : "170",
+				peso : "70"
+			};
+
+			function info(){
+				document.getElementById("info").innerHTML=persona.nombre+" "
+						 +persona.apellidos+" tiene "
+						 +persona.edad+" años, pesa "
+						 +persona.peso+" kg y tiene una altura de "
+						 +persona.altura+" cm."
+			};
+      </script>
+   </head>
+   <body>
+      <p>Pulsa el botón para ver la información </p>
+	  <p id="info"></p>
+      <button type="button" onclick="info();">Info!</button>
+   </body>
+</html>
