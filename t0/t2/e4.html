@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <script>
+        function calculadora(p1=1, op, ...rps) {
+            switch(op) {
+                case '+':
+                    return rps.map(p => p1 + p)
+                case '-':
+                    return rps.map(p => p1 - p)
+                case '*':
+                    return rps.map(p => p1 * p)
+                case '/':
+                    return rps.map(p => p1 / p)
+                default:
+                    return op + " no reconocido como operador"
+            }
+        }
+
+        function resultadoYsuma(resultado) {
+            return "[" + resultado + "] suma = " + resultado.reduce((a,b) => a + b);
+        }
+
+        document.write("<pre>");
+        document.write("3 + (2, 5) = " + resultadoYsuma(calculadora(3, '+', 2, 5)) + "\n");
+        document.write("5 - (1, 4, 3) = " + resultadoYsuma(calculadora(5, '-', 1, 4, 3)) + "\n");
+        document.write("5 * (7, 9) = " + resultadoYsuma(calculadora(5, '*', 7, 9)) + "\n");
+        document.write("16 / (4) = " + resultadoYsuma(calculadora(16, '/', 4)) + "\n");
+        document.write("</pre>");
+      </script>
+   </head>
+   <body>
+   </body>
+</html>

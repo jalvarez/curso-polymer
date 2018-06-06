@@ -1,0 +1,29 @@
+<html>
+   <head>
+      <script>
+        let calculadora = (p1, p2, op) => {
+            switch(op) {
+                case '+':
+                    return p1 + p2
+                case '-':
+                    return p1 - p2
+                case '*':
+                    return p1 * p2
+                case '/':
+                    return p1 / p2
+                default:
+                    return op + " no reconocido como operador"
+            }
+        }
+
+        document.write("<pre>");
+        document.write("3 + 2 = " + calculadora(3, 2, '+') + "\n");
+        document.write("5 - 1 = " + calculadora(5, 1, '-') + "\n");
+        document.write("5 * 7 = " + calculadora(5, 7, '*') + "\n");
+        document.write("16 / 4 = " + calculadora(16, 4, '/') + "\n");
+        document.write("</pre>");
+      </script>
+   </head>
+   <body>
+   </body>
+</html>
