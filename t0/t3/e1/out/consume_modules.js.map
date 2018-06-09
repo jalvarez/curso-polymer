@@ -1,0 +1,1 @@
+{"version":3,"sources":["scripts/consume_modules.js"],"names":[],"mappings":";;4BACe,CAAC","file":"out/consume_modules.js","sourceRoot":"/","sourcesContent":["import display_message from './message_modules.js'\ndisplay_message()\n"]}
